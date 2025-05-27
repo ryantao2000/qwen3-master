@@ -1,0 +1,56 @@
+{
+  "answer": {
+    "classic": {
+      "rouge-1": 6,
+      "rouge-2": 2,
+      "rouge-l": 4,
+      "bleu": 1,
+      "precision": 5,
+      "recall": 10,
+      "f1": 6,
+      "accuracy": 10
+    },
+    "semantic": {
+      "semantic_cosine_mean": 72,
+      "semantic_cosine_std": 15,
+      "semantic_cosine_min": 17,
+      "semantic_cosine_max": 94
+    }
+  },
+  "cot": {
+    "classic": {
+      "rouge-1": 5,
+      "rouge-2": 1,
+      "rouge-l": 3,
+      "bleu": 1,
+      "precision": 6,
+      "recall": 5,
+      "f1": 5,
+      "accuracy": 5
+    },
+    "semantic": {
+      "semantic_cosine_mean": 74,
+      "semantic_cosine_std": 10,
+      "semantic_cosine_min": 52,
+      "semantic_cosine_max": 90
+    }
+  },
+  "combined": {
+    "classic": {
+      "rouge-1": 36,
+      "rouge-2": 31,
+      "rouge-l": 32,
+      "bleu": 17,
+      "precision": 25,
+      "recall": 50,
+      "f1": 31,
+      "accuracy": 50
+    },
+    "semantic": {
+      "semantic_cosine_mean": 72,
+      "semantic_cosine_std": 15,
+      "semantic_cosine_min": 17,
+      "semantic_cosine_max": 94
+    }
+  }
+}

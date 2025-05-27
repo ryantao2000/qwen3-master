@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: xllz
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen3:8b
+    openai:
+      api-key: demo
+
+
+
+#  ai:
+#    openai:
+#      api-key: demo  # 替换为你的 OpenAI API 密钥
+#      base-url: http://localhost:8000/    # 默认值，通常无需修改
+#      chat:
+#        options:
+#          model: Qwen3-8B                # 默认模型
+#          temperature: 0.7                       # 生成文本的随机性控制
+#          max-tokens: 500
