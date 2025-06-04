@@ -1,0 +1,20 @@
+{
+  "med_mc": {
+    "correct": 388,
+    "total": 508,
+    "accuracy": "76.38%",
+    "eval_mode": "enhanced"
+  },
+  "gsm8k": {
+    "correct": 433,
+    "total": 501,
+    "accuracy": "86.43%",
+    "eval_mode": "strict"
+  },
+  "pubmedqa": {
+    "correct": 432,
+    "total": 491,
+    "accuracy": "87.98%",
+    "eval_mode": "lenient"
+  }
+}
