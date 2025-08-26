@@ -1,0 +1,13 @@
+transformers>=4.51.0
+torch>=2.6
+accelerate
+tokenizers
+safetensors
+sentencepiece
+einops
+protobuf
+numpy
+scipy
+huggingface_hub
+modelscope
+triton

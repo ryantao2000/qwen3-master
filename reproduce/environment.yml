@@ -1,13 +1,13 @@
 name: qwen3
-channels: [conda-forge, defaults]
+channels:
+  - defaults
 dependencies:
   - python=3.10
   - pip
   - pip:
-      # —— 核心：与官方要求匹配 ——
-      - "transformers>=4.51.0"        # 文档硬性要求
-      - "torch>=2.6"                  # 官方推荐；请安装与你驱动/CUDA匹配的轮子
-      - accelerate                    # device_map="auto" 需要
+      # —— 核心依赖 ——
+      - transformers>=4.51.0
+      - accelerate
       - tokenizers
       - safetensors
       - sentencepiece
@@ -15,10 +15,14 @@ dependencies:
       - protobuf
       - numpy
       - scipy
+      - huggingface_hub
+      - modelscope
+      - triton
 
-      # —— 下载&生态（文档示例用到） ——
-      - huggingface_hub               # 支持 huggingface-cli 下载到本地
-      - modelscope                    # 中国大陆可用的 ModelScope 下载
+      # —— PyTorch (CUDA 12.1 版本) ——
+      - torch==2.3.1+cu121
+      - torchvision==0.18.1+cu121
+      - torchaudio==2.3.1+cu121
 
-      # —— 可选：量化/FP8/性能 ——
-      - triton                        # 仅当你要跑 FP8 量化模型时（Linux/NVIDIA）
+      # 强制 pip 使用 PyTorch 官方 CUDA 12.1 源
+      - --extra-index-url https://download.pytorch.org/whl/cu121
